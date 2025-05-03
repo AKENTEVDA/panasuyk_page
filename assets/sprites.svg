@@ -1,29 +1,13 @@
-<svg display="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <symbol viewBox="0 0 141 141" id="right-arrow-icon" >
-  <rect width="141" height="141" fill="url(#pattern0_69_17)"/>
-  <defs>
-  <pattern id="pattern0_69_17" patternContentUnits="objectBoundingBox" width="1" height="1">
-  <use xlink:href="#image0_69_17" transform="scale(0.0070922)"/>
-  </pattern>
-  <image id="image0_69_17" width="141" height="141" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAACNCAYAAACKXvmlAAAFE0lEQVR4Ae3dv4tcZRSH8dmVYBBRUQMh1gqCYCF2BixEsLAQQiCN4BYqsRFEFA1YWtiFoKitNgop/FGkULCwsPAfsFsEFaJJUIOIIY/zLrOLy8bJnLN759655xlYMjt7zt73fN8Pd3ZnltzJxNtWAsBtwAbwGbAJXAJ+Br4GXgWOGJUJ7CQAPAP8xPzbnzM86zuN3qmZAPAGcH2+l11f/QQ4VDMtp55Mn4ae28Vh8U/OC6cgIOAY8PviTvZUCqeaG+CdPQziDwinEhzgx7iRG3YIpwKc2VPTDQUkHxTO2OEAjyRxzGsTzpjhAA/P2/19fE04Y4UD3BV8bSbiSDgjhvN9REKwVjhjhAO8FIQQLRfO2OAAh4EfohKC9cIZIZz2W1R7I7LLm3BGCOc48EeXaoAvgFvHll3peQDhlBaQHF44yeCqtwmnuoDk/MJJBle9TTjVBSTnF04yuOptwqkuIDm/cJLBVW8TTnUByfmFkwyueptwqgtIzi+cZHDV24RTXUByfuEkg6veJpzqApLzCycZXPU24VQXkJxfOMngqrcJp7qA5PzCSQZXvU041QUk5xdOMrjqbcKpLiA5v3CSwVVvE051Acn5hZMMrnqbcKoLSM4vnGRw1duEU11Acn7hJIOr3iac6gKS8wsnGVz1NuFUF5CcXzjJ4Kq3AY/5X7lVV5CYXziJ0GyZtIuXecYRQjwB4cQzs2PiGUcEyQQ84ySDq94mnOoCkvMLJxlc9TbhVBeQnF84yeCqtw0WDnAP8CRwCnjej8Fl8HHHV45p336xyw4BjwMXgGtLWJSHGH4C/w8HOAS8O/wZXGEPCeyFA9wyOxX1sB4PuSIJfAqs7/w8OX0qOrMiC3eZ/Sbw+hYa4D7gr37X4tFXJIGrwNH2NvxbK7JglzmMBM40NN8NYy2uYkUS+Lah6fpKsSuShctcMIHLDc31BYstM4GWwLWG5rJZmEAggYsNzTeBBktN4KuG5hVzMIFAAi83NHcDVwJNltZN4Dfgzu0X+F6om4OTBxLY2Hkbod0BzgWaLa2XwNldYGZo1qZvJ7wG/F0vDye+SQLvAWt70Gw/ANwPfAC05y9vJjAfzDac2ZlnHXhg9kdZTwB+DCuD95fgeXEw/8Xj/eElAJwA/ukYzYe7/n5meDG4okUTEMyiSVm3lYBghBBKQDChuCwWjAZCCQgmFJfFgtFAKAHBhOKyWDAaCCUgmFBcFgtGA6EEBBOKy2LBaCCUgGBCcVksGA2EEhBMKC6LBaOBUAKCCcVlsWA0EEpAMKG4LBaMBkIJCCYUl8WC0UAoAcGE4rJYMBoIJSCYUFwWC0YDoQQEE4rLYsFoIJSAYEJxWSwYDYQSEEwoLosFo4FQAoIJxWWxYDQQSkAwobgsFowGQgkIJhSXxYLRQCgBwYTislgwGgglIJhQXBYLRgOhBAQTistiwWgglABwcgkXp/BqJqFdGXAx8JRgBrxBQ1va9PKL9wIXO778jWeYoW38ftYDvC2Y/SRYrLdd/Ar4pUM0nmHGZgp4UDBj29WO55n9ANyFG88wHe9db98eeLoDMYLpbUeXcGDg0QNGI5gl7FuvhwAOA1cPCI5get3NJR4c+OgA0AhmiXvW+6GAh/b5arBget/FHhYwRfNm8mwjmB72axCHBNaAs0E4rX5tEAO4iP4SADaAX2+Cp71P9Wx/q/TIg0sAuAM4Pf11/EtgE7g0+/fz6VsOLwK3D27RPS3oX50FgdCcWkYPAAAAAElFTkSuQmCC"/>
-  </defs>
+<svg display="none" xmlns="http://www.w3.org/2000/svg">
+
+  <symbol viewBox="0 0 40 40" id="right-arrow72-icon" preserveAspectRatio="xMidYMid meet">
+    <path d="M30.3281 24.375H7.5V20.625H30.3281L19.8281 10.125L22.5 7.5L37.5 22.5L22.5 37.5L19.8281 34.875L30.3281 24.375Z" fill="currentColor"/>
   </symbol>
 
-  <symbol viewBox="0 0 72 72" id="right-arrow72-icon">
-    <rect width="72" height="72" fill="url(#pattern0_80_20)"/>
-    <defs>
-    <pattern id="pattern0_80_20" patternContentUnits="objectBoundingBox" width="1" height="1">
-    <use xlink:href="#image0_80_20" transform="scale(0.0138889)"/>
-    </pattern>
-    <image id="image0_80_20" width="72" height="72" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABmJLR0QA/wD/AP+gvaeTAAAC70lEQVR4nO3cv2oUURTH8e8ZBUHFLiCIkEcQEdHGJoXe2WAsVLAwBgP+w0eIEBFfIYgpbCStIuTOYhNEIYjvoAjWKlgsbNw5NmaVkMgEZuacO/FX7pzL/fFhl51lLis4SL/fP1mW5SJwDtgHrAOP8zx/Y1oMEOsCMcYAvAAObLlUisjdEMJTg1rjmAKtra0dHgwGH4GJHUZURO5YImVWGwMMBoML7IwDIKr6pCiKW2112hpTIBE5XmXMEskUCPhScc4MyRRoOBz2ga8Vx02QTIFmZmZ+APPAqOKS1pGsP2Lkef5SRK4BPysu2US612Sv8WZtbFIlRVFcUdUVYH/FJSoi90MIS032cgMEPpFcAYE/JHdA4AvJJRD4QXILBD6QXAOBPZJ7ILBFSgII7JCSAQIbpKSAoH2k5ICgXaQkgaA9pGSBoB2kpIGgeaTkgaBZpE4AQXNInQGCZpA6BQT1I3UOCOpF6iQQ1IfUWSCoB2kMtLq6ehS4JCKTtba0z3ngxC7mFbid5/ky/AYqiuKGqi4BB+vvl2TGSFIUxZSqvsbBQ0RnKUVkKlPVBf7jbJdMVRcy4Ix1E8c5mwGldQvHKTPgnXULx3mbicgi1U9W7KVsqOrDLISwLiJXqX6QaS9kpKpzvV7v/fhGMcZ4BAjApFmtZnIZOLWL+ZGqzvZ6vRXo+E+NGONNYJnqtzEjEZkLITzffKGzQHXgQEeB6sKBDgLViQMdA6obBzoE1AQOdASoKRzoAFCTOJA4UNM4kDBQGziQKFBbOJAgUJs4kBhQ2ziQEJAFDiQCZIUDCQBZ4oBzIGsccAzkAQecAnnBAYdAnnDAGZA3HHAE5BEHnAB5xQEHQDHGWeAZu8D5+7lV0zEFijFOAJ+AQxWXtIoD9v/+chHHOGAMpKrHKo6a4ID9O+hzhTEzHDAGGo1Gr4Dv/xqxxAFjoOnp6W8iMg9sbHN5Q0SuW+KAg695gH6/f7osywf8OS+5LiKPQggfLHsB/ALOGxb59CTMlwAAAABJRU5ErkJggg=="/>
-    </defs>
-
-  </symbol>
-
-  <symbol width="24" height="20" viewBox="0 0 24 20" id="burger-icon">
-    <rect width="24" height="3.83721" fill="#AAAAAA" fill-opacity="0.5"/>
-    <rect y="7.67444" width="24" height="3.83721" fill="#AAAAAA" fill-opacity="0.5"/>
-    <rect y="15.3489" width="24" height="3.83721" fill="#AAAAAA" fill-opacity="0.5"/>
+  <symbol viewBox="0 0 24 20" id="burger-icon">
+    <rect width="24" height="3.83721" fill="#aaaaaaa1" fill-opacity="0.5"/>
+    <rect y="7.67444" width="24" height="3.83721" fill="#aaaaaaa1" fill-opacity="0.5"/>
+    <rect y="15.3489" width="24" height="3.83721" fill="#aaaaaaa1" fill-opacity="0.5"/>
   </symbol>
 
 </svg>

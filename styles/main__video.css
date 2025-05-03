@@ -1,0 +1,13 @@
+.video-section__wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.main__video-mp4 {
+  width: 100%;
+  height: auto;
+  display: block;
+}

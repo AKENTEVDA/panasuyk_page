@@ -1,5 +1,5 @@
 .beauty {
-  padding: 0 0 50px;
+  padding: 0 0 250px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -26,24 +26,29 @@
 
 .beauty__text-ru {
   text-align: end;
-  font-weight: 200;
+  font-weight: 100;
   font-feature-settings: "frac";
   letter-spacing: 0.5px;
   font-size: 75px;
 }
 
 .beauty__text-en {
-  font-weight: 200;
+  font-weight: 100;
   letter-spacing: 0.5px;
   font-feature-settings: "frac";
   font-size: 28px;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .beauty__text-en:hover {
   opacity: 1;
 }
 
+@media (max-width: 992px) {
+  .beauty {
+    padding: 150px 0;
+  }
+}
 @media (max-width: 576px) {
   .beauty__wrapper {
     max-width: 410px;

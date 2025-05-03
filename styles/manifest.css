@@ -1,0 +1,172 @@
+.manifest {
+  padding: 250px 0;
+  width: 100%;
+  transition: opacity 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.manifest__wrapper {
+  padding: 0 10px;
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.manifest__content {
+  width: 100%;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 187px;
+}
+
+.manifest__content .beauty__text-ru {
+  font-size: 38px;
+}
+
+.manifest__photo {
+  width: 100%;
+  height: 560px;
+  background: url("../assets/img/main/manifest.webp") center/cover no-repeat;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+  will-change: opacity;
+}
+
+.manifest__photo--visible {
+  opacity: 1;
+}
+
+.manifest__photo .beauty__text-ru {
+  padding-left: 5px;
+  font-size: 38px;
+  color: var(--c-white);
+}
+
+@media (max-width: 1280px) {
+  .manifest__photo {
+    height: 500px;
+  }
+  .manifest__content {
+    gap: 181px;
+  }
+  .manifest__photo .beauty__text-ru {
+    font-size: 32px;
+  }
+  .manifest__content .beauty__text-ru {
+    font-size: 32px;
+  }
+  .manifest__content .beauty__text-en {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .manifest {
+    padding: 150px 0;
+  }
+  .manifest__wrapper {
+    height: 440px;
+  }
+  .manifest__photo {
+    height: 440px;
+  }
+  .manifest__content {
+    gap: 166px;
+  }
+  .manifest__photo .beauty__text-ru {
+    font-size: 26px;
+  }
+  .manifest__content .beauty__text-ru {
+    font-size: 26px;
+  }
+  .manifest__content .beauty__text-en {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 782px) {
+  .manifest__wrapper {
+    height: 380px;
+  }
+  .manifest__photo {
+    height: 380px;
+  }
+  .manifest__content {
+    gap: 140px;
+  }
+  .manifest__photo .beauty__text-ru {
+    font-size: 22px;
+  }
+  .manifest__content .beauty__text-ru {
+    font-size: 22px;
+  }
+  .manifest__content .beauty__text-en {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 671px) {
+  .manifest__wrapper {
+    height: 920px;
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+  .manifest__photo {
+    height: 360px;
+  }
+  .manifest__content {
+    gap: 70px;
+    justify-content: space-between;
+  }
+  .manifest__photo .beauty__text-ru {
+    display: none;
+  }
+  .manifest__content .beauty__text-ru {
+    text-align: center;
+    font-size: 36px;
+  }
+  .manifest__content .beauty__text-ru::after {
+    content: "и светлому, и темному.";
+  }
+
+  .manifest__content .beauty__text-en {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 555px) {
+  .manifest {
+    padding: 50px 0;
+  }
+  .manifest__content .beauty__text-ru {
+    font-size: 32px;
+  }
+  .manifest__wrapper {
+    margin: 0 0 50px;
+    height: 700px;
+  }
+  .manifest__photo {
+    height: 319px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .manifest__content .beauty__text-ru {
+    font-size: 28px;
+  }
+  .manifest__wrapper {
+    margin: 0 0 50px;
+  }
+  .manifest__photo {
+    height: 238px;
+  }
+}

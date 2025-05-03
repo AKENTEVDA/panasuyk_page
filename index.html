@@ -12,10 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <main>
-      <div class="wrapper-menu">
+      <div class="wrapper-menu" aria-label="menu-burger link">
         <svg class="burger-menu">
           <use href="/assets/sprites.svg#burger-icon"></use>
         </svg>
@@ -33,17 +34,146 @@
           </div>
         </div>
       </section>
-      <section class="beauty" aria-label="beauty-text section">
+      <section class="beauty" aria-label="text about beauty section">
         <div class="container">
           <div class="beauty__wrapper">
-            <h2 class="beauty__text-ru">
+            <h2 class="beauty__text-ru" aria-label="message of Panasyuk">
               Красота - это не только про внешнее.
             </h2>
             <h3 class="beauty__text-en">Beauty is not just about appearance</h3>
           </div>
         </div>
       </section>
-      <script src="main.js"></script>
+      <section class="manifest" aria-label="I manifest section">
+        <div class="container">
+          <div class="manifest__wrapper">
+            <div class="manifest__content">
+              <h2 class="beauty__text-ru">
+                Я проявляю истинное начало человека, красоту его природы, где
+                есть место
+              </h2>
+              <h3 class="beauty__text-en">
+                I manifest the essence of beautiful human nature, where is both
+                of light and dark sides.
+              </h3>
+            </div>
+            <div class="manifest__photo" aria-label="image with white text">
+              <h2 class="beauty__text-ru">и светлому, и темному.</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="show" aria-label="we always show section">
+        <div class="container">
+          <div class="show__wrapper">
+            <img
+              src="assets/img/main/show.webp"
+              alt="photo by Elena Panasyuk"
+              class="show__img"
+            />
+            <div class="show__content" aria-label="text of section show">
+              <h2 class="beauty__text-en">
+                we always show the first to the world, and often carefully hide
+                the second even from the most inquisitive eyes.<br />but not
+                from mine :)
+              </h2>
+              <h2 class="beauty__text-ru">
+                Первое мы транслируем в мир, а второе зачастую аккуратно прячем
+                даже от самых пытливых глаз.<br />но не от моих :)
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hero" aria-label="Panasyuk hero section">
+        <div class="hero__wrapper">
+          <div class="hero__content" aria-label="text about hero">
+            <h2 class="beauty__text-en">
+              Hi, my name is Elena Panasyuk, and I'm damn good at portraits.
+            </h2>
+            <h2 class="beauty__text-ru">
+              Привет, меня зовут Елена Панасюк, и я чертовски хороша в
+              портретах.
+            </h2>
+            <div class="hero__wrapper-right_arrow">
+              <a href="#" aria-label="link for contact with photograph">
+                <svg class="hero__right-arrow-svg" width="45" height="45">
+                  <use
+                    href="assets/sprites.svg#right-arrow72-icon"
+                    width="100%"
+                    height="100%"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="hero__img-link"
+            aria-label="link for contact with photograph"
+            ><img
+              src="assets/img/main/hero.webp"
+              class="hero__img"
+              alt="portret Elena Panasyuk"
+          /></a>
+        </div>
+      </section>
+      <section class="portfolio" aria-label="portfolio section">
+        <div class="container">
+          <div
+            class="portfolio__background"
+            aria-label="portfolio block with background"
+          >
+            <p class="portfolio__title">portfolio</p>
+            <div
+              class="portfolio__ellipse portfolio__ellipse-projects"
+              aria-label="ellipse-link projects"
+            >
+              <a href="#" class="portfolio__link">projects</a>
+            </div>
+            <div class="portfolio__wrapper-ellipse">
+              <div
+                class="portfolio__ellipse portfolio__ellipse-portraits"
+                aria-label="ellipse-link portraits"
+              >
+                <a href="#" class="portfolio__link">portraits</a>
+              </div>
+              <div
+                class="portfolio__ellipse portfolio__ellipse-portraits"
+                aria-label="ellipse-link planet"
+              >
+                <a href="#" class="portfolio__link">planet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video-section" aria-label="main video">
+        <div class="container">
+          <div class="video-section__wrapper">
+            <video
+              controls
+              muted
+              src="assets/video/main.mp4"
+              class="main__video-mp4"
+              type="video/mp4"
+            ></video>
+          </div>
+        </div>
+      </section>
+      <section class="seeing" aria-label="seeing in my camera section">
+        <div class="container">
+          <div class="seeing__wrapper">
+            <img
+              src="assets/img/main/seeing.webp"
+              alt="photo by Elena Panasyuk"
+              class="seeing__img"
+            />
+            <p class="seeing__inside-title">see you in my camera</p>
+            <p class="seeing__title"><a href="#">Ваша Панасюк.</a></p>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

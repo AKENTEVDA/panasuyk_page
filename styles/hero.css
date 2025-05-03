@@ -1,0 +1,139 @@
+.hero {
+  width: 100%;
+  padding: 250px 0;
+}
+
+.hero__wrapper {
+  padding: 0 15px;
+  max-width: 940px;
+  height: 520px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  column-gap: 50px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero__content .beauty__text-en {
+  font-size: 33px;
+  text-align: end;
+}
+
+.hero__content .beauty__text-ru {
+  font-size: 30px;
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+  will-change: opacity;
+}
+
+.hero__wrapper-right_arrow {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-bottom: 30px;
+}
+
+.hero__right-arrow-svg {
+  width: 45px;
+  height: 45px;
+  color: var(--c-light-grey);
+  transition-delay: 0.2s;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero__right-arrow-svg:hover {
+  color: var(--c-grey-hover);
+}
+
+.hero__img-link {
+  align-self: self-end;
+}
+
+.hero__img {
+  max-width: 284px;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+  will-change: opacity;
+}
+
+.hero__img:hover {
+  opacity: 0.5 !important;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 150px 0;
+  }
+  .hero__content .beauty__text-ru {
+    font-size: 29px;
+  }
+  .beauty__text-en {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 610px) {
+  .hero__wrapper {
+    display: block;
+    flex-wrap: initial;
+    height: auto;
+    text-align: center;
+  }
+  .hero__wrapper-right_arrow {
+    display: none;
+  }
+  .hero__img {
+    max-width: initial;
+  }
+  .hero__content {
+    align-items: center;
+  }
+  .hero__content .beauty__text-ru {
+    max-width: 365px;
+    text-align: center;
+    order: 1;
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+  .hero__content .beauty__text-en {
+    display: none;
+    text-align: center;
+    order: 2;
+    margin-bottom: 20px;
+  }
+  .hero__img-link {
+    display: block;
+    align-self: initial;
+  }
+  .hero__img-link::after {
+    opacity: 0.5;
+    font-size: 19px;
+    margin: 20px auto 0;
+    display: block;
+    content: "Hi, my name is Elena Panasyuk, and I'm damn good at portraits.";
+  }
+
+  .hero__img-link:hover::after {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 394px) {
+  .hero__content .beauty__text-ru {
+    max-width: 342px;
+    font-size: 17px;
+  }
+  .hero__img-link::after {
+    max-width: 304px;
+    font-size: 17px;
+    text-align: center;
+  }
+}
