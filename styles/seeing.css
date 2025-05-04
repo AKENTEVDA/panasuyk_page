@@ -45,3 +45,12 @@
 .seeing__title:hover {
   color: var(--c-grey-hover);
 }
+
+@media (max-width: 375px) {
+  .seeing__title {
+    font-size: 27px;
+  }
+  .seeing__inside-title {
+    font-size: 31px;
+  }
+}
