@@ -31,36 +31,53 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const showSection = document.querySelector(".show");
   const showImg = document.querySelector(".show__img");
+  const manifestSection = document.querySelector(".manifest");
+  const manifestPhoto = document.querySelector(".manifest__photo");
+
   let ticking = false;
 
   function updateElements() {
-    const rect = showSection.getBoundingClientRect();
+    // Получаем позиции секций относительно viewport
+    const showRect = showSection.getBoundingClientRect();
+    const manifestRect = manifestSection.getBoundingClientRect();
     const viewportHeight = window.innerHeight;
 
-    const visibleHeight =
-      Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, 0);
-    const visibility = Math.min(
-      Math.max(visibleHeight / viewportHeight, 0),
-      0.7
+    // Расчет видимости секции show (0..1)
+    const showVisibility = Math.min(
+      Math.max(
+        (Math.min(showRect.bottom, viewportHeight) -
+          Math.max(showRect.top, 0)) /
+          viewportHeight,
+        0
+      ),
+      1
     );
 
-    showImg.style.opacity = visibility;
+    // Расчет видимости секции manifest (0..1)
+    const manifestVisibility = Math.min(
+      Math.max(
+        (Math.min(manifestRect.bottom, viewportHeight) -
+          Math.max(manifestRect.top, 0)) /
+          viewportHeight,
+        0
+      ),
+      1
+    );
 
-    const manifestPhoto = document.querySelector(".manifest__photo");
+    // Плавное появление show__img (начинаем при 20% видимости секции show)
+    showImg.style.opacity = Math.min(
+      Math.max((showVisibility - 0.2) / 0.8, 0),
+      1
+    );
+
+    // Плавное исчезновение manifest__photo (начинаем при 50% видимости секции show)
     if (manifestPhoto) {
-      const manifestRect = document
-        .querySelector(".manifest")
-        .getBoundingClientRect();
-      const manifestVisibility = Math.min(
-        Math.max(
-          (Math.min(manifestRect.bottom, viewportHeight) -
-            Math.max(manifestRect.top, 0)) /
-            viewportHeight,
-          0
-        ),
+      const fadeStart = 0.7; // Начинаем исчезать при 50% видимости show
+      const fadeProgress = Math.min(
+        Math.max((showVisibility - fadeStart) / (1 - fadeStart), 0),
         1
       );
-      manifestPhoto.style.opacity = manifestVisibility;
+      manifestPhoto.style.opacity = 1 - fadeProgress;
     }
   }
 
@@ -77,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", handleScroll);
   window.addEventListener("resize", updateElements);
 
+  // Инициализация
   updateElements();
 });
 
