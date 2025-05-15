@@ -5,22 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <title>Panasyuk</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-    /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link rel="stylesheet" href="index.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="menu-modal" aria-hidden="true">
+      <div class="menu-container" aria-hidden="true">
+        <nav class="menu-nav">
+          <ul class="menu-list">
+            <li><a href="#" class="menu-link">portfolio</a></li>
+            <li><a href="#" class="menu-link__portfolio">portraits</a></li>
+            <li><a href="#" class="menu-link__portfolio">projects</a></li>
+            <li><a href="#" class="menu-link__portfolio">planet</a></li>
+            <li><a href="#" class="menu-link">contact</a></li>
+            <li><a href="#" class="menu-link">about</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button class="menu-close" aria-label="Close menu">
+        <svg width="24" height="24" class="menu-close__icon">
+          <use
+            href="assets/sprites.svg#close-icon"
+            width="100%"
+            height="100%"
+          ></use>
+        </svg>
+        close
+      </button>
+      <a href="index.html" class="menu-modal__main-link">main</a>
+      <div class="contact-link__wrapper">
+        <a
+          href="https://www.instagram.com/panasyuk._?igsh=MW1mNDNmbzJrbnR3OQ=="
+          rel="noopener noreferrer"
+          target="_blank"
+          class="contact-link"
+        >
+          <svg width="48" height="48" class="menu-instagram__icon">
+            <use
+              href="assets/sprites.svg#instagram-icon"
+              width="100%"
+              height="100%"
+            ></use>
+          </svg>
+        </a>
+        <a
+          href="https://t.me/panasyukseeyou"
+          rel="noopener noreferrer"
+          target="_blank"
+          class="contact-link"
+        >
+          <svg width="48" height="48" class="menu-tg__icon">
+            <use
+              href="assets/sprites.svg#tg-icon"
+              width="100%"
+              height="100%"
+            ></use>
+          </svg>
+        </a>
+      </div>
+    </div>
     <main>
       <div class="wrapper-menu" aria-label="menu-burger link">
         <svg class="burger-menu">

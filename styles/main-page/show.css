@@ -26,10 +26,10 @@
   will-change: opacity;
 }
 
-.show__img:hover {
+/* .show__img:hover {
   opacity: 1 !important;
   z-index: 5;
-}
+} */
 
 .show__content {
   z-index: 1;
@@ -47,10 +47,10 @@
 
 .show__content .beauty__text-ru {
   margin-right: 10px;
-  max-width: 76%;
+  max-width: 62%;
   height: auto;
   position: absolute;
-  top: 58%;
+  top: 75%;
   right: 0;
   translate: 0 -50%;
   /* left: 500px; */
@@ -80,7 +80,7 @@
   }
   .show__content .beauty__text-ru {
     font-size: 29px;
-    max-width: 76%;
+    max-width: 62%;
     top: 82%;
   }
 }
