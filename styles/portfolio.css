@@ -8,7 +8,7 @@
   position: relative;
   width: 100%;
   height: 1059px;
-  background: url(/assets/img/main/portfolio.webp) center/cover no-repeat;
+  background: url(../assets/img/main/portfolio.webp) center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +91,7 @@
 
 @media (max-width: 992px) {
   .portfolio__background {
-    background: url(/assets/img/main/portfolio.webp) 30% 50% / cover no-repeat;
+    background: url(../assets/img/main/portfolio.webp) 30% 50% / cover no-repeat;
   }
 }
 
@@ -101,7 +101,7 @@
   }
   .portfolio__background {
     height: 830px;
-    background: url(/assets/img/main/portfolio.webp) 30% 50% / cover no-repeat;
+    background: url(../assets/img/main/portfolio.webp) 30% 50% / cover no-repeat;
   }
 
   .portfolio__title {
