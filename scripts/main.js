@@ -29,6 +29,33 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const textElement = document.querySelector(".show__content .beauty__text-ru");
+  const imgElement = document.querySelector(".show__img");
+
+  function checkOverlap() {
+    const textRect = textElement.getBoundingClientRect();
+    const imgRect = imgElement.getBoundingClientRect();
+
+    const overlap = !(
+      textRect.right < imgRect.left ||
+      textRect.left > imgRect.right ||
+      textRect.bottom < imgRect.top ||
+      textRect.top > imgRect.bottom
+    );
+
+    if (overlap) {
+      textElement.style.color = "var(--c-light-grey)";
+    } else {
+      textElement.style.color = "var(--c-black-hover)";
+    }
+
+    requestAnimationFrame(checkOverlap);
+  }
+
+  checkOverlap();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const showSection = document.querySelector(".show");
   const showImg = document.querySelector(".show__img");
   const manifestSection = document.querySelector(".manifest");
