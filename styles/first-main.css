@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 1799px;
-  background: url("assets/img/main/back-image.webp") center/cover no-repeat;
+  background: url("../assets/img/main/back-image.webp") center/cover no-repeat;
   background-position: top;
   padding: 65px 0 0;
   overflow: hidden;
@@ -144,7 +144,8 @@
 
 @media (max-width: 768px) {
   .first-main {
-    background: url("assets/img/main/back-image.webp") 70% 50% / cover no-repeat;
+    background: url("../assets/img/main/back-image.webp") 70% 50% / cover
+      no-repeat;
   }
   .first-main__logo {
     font-size: 60px;

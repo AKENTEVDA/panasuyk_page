@@ -103,6 +103,10 @@
   margin: 0 auto;
 }
 
+.menu-close__icon:hover {
+  color: var(--c-grey-hover);
+}
+
 .menu-modal__main-link {
   position: absolute;
   top: 50px;
