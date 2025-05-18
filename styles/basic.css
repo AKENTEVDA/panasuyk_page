@@ -104,13 +104,16 @@ p {
   }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 620px) {
   .wrapper-menu {
-    top: 40px;
+    top: 45px;
     font-size: 20px;
   }
   .title-menu {
-    font-size: 20px;
+    display: none;
+  }
+  .burger-menu {
+    display: block;
   }
 }
 
@@ -118,11 +121,5 @@ p {
   .wrapper-menu {
     left: 10px;
     top: 43px;
-  }
-  .title-menu {
-    display: none;
-  }
-  .burger-menu {
-    display: block;
   }
 }

@@ -130,7 +130,7 @@
   }
   .first-main__logo {
     font-size: 74px;
-    margin-right: 50px;
+    margin-right: 25px;
   }
   .first-main__logo::after {
     top: 80px;
@@ -170,7 +170,7 @@
   }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 620px) {
   .first-main {
     height: 892px;
   }
@@ -201,6 +201,10 @@
   }
   .first-main__logo {
     margin-right: 27px;
+  }
+
+  .first-main__logo::after {
+    right: 2px;
   }
 
   .first-main__all-work {
