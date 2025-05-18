@@ -33,6 +33,7 @@
 }
 
 .seeing__title {
+  padding: 0 15px;
   width: auto;
   text-align: end;
   font-weight: 100;

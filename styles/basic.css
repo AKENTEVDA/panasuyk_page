@@ -24,6 +24,11 @@ p {
   margin: 0;
 }
 
+::selection {
+  background: var(--c-light-grey); /* Цвет фона выделения */
+  color: var(--c-black); /* Цвет текста при выделении */
+}
+
 .container {
   max-width: 1680px;
   margin: 0 auto;
@@ -65,7 +70,7 @@ p {
 @media (max-width: 1440px) {
   .wrapper-menu {
     top: 91px;
-    left: 45px;
+    left: 75px;
   }
   .title-menu {
     font-size: 32px;
