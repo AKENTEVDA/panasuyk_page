@@ -1,0 +1,126 @@
+.header {
+  width: 100%;
+}
+
+.header .container_portraits {
+  display: flex;
+  justify-content: end;
+}
+
+.header__logo {
+  width: fit-content;
+  text-align: end;
+  padding: 50px 15px 60px;
+  font-size: 42px;
+  color: var(--c-light-grey);
+  text-transform: lowercase;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.header__logo:hover {
+  color: var(--c-black-hover);
+}
+
+.first-section {
+  padding: 50px 15px;
+  width: 100%;
+  height: auto;
+}
+
+.first-section__wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.first-section__wrapper-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25%;
+}
+
+.first-section__wrapper-title {
+  letter-spacing: 0.4px;
+  font-size: 78px;
+  color: var(--c-black-hover);
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.first-section__first_portrait {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.first-section__second_portrait {
+  width: 1000px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: width 0.5s ease-out;
+  transition: opacity 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: opacity;
+}
+
+@media (max-width: 1440px) {
+  .first-section__second_portrait {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .first-section__second_portrait {
+    width: 580px;
+  }
+  .first-section__first_portrait {
+    max-width: 85%;
+  }
+  .first-section__wrapper-title {
+    font-size: 68px;
+  }
+}
+
+@media (max-width: 992px) {
+  .first-section__wrapper-content {
+    gap: 75px;
+  }
+  .first-section__second_portrait {
+    width: 440px;
+  }
+  .first-section__first_portrait {
+    max-width: 75%;
+  }
+  .first-section__wrapper-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-section__second_portrait {
+    width: 340px;
+  }
+
+  .first-section__wrapper-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 620px) {
+  .header .container_portraits {
+    display: flex;
+    justify-content: center;
+  }
+  .first-section__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 75px;
+  }
+}

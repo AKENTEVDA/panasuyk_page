@@ -1,0 +1,245 @@
+.portraitsPhoto-cards {
+  width: 100%;
+  padding: 50px 0;
+  height: auto;
+}
+.photo-cards__main-img {
+  display: block;
+  max-width: 1378px;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+  padding: 0 15px 50px;
+  transition: opacity 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: opacity;
+}
+
+.portraitsPhoto-cards__wrapper {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  padding: 50px 15px;
+}
+
+.portraitsPhoto-cards__card {
+  width: fit-content;
+  position: relative;
+}
+
+.portraitsPhoto-cards__card-img {
+  max-height: 675px;
+  object-fit: cover;
+}
+
+.portraitsPhoto-cards__card-img-hidden {
+  z-index: 5;
+  position: absolute;
+  max-height: 30vw;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: none;
+}
+
+.portraitsPhoto-cards__card-img-hidden.show {
+  opacity: 1;
+  display: block;
+}
+
+.portraitsPhoto-cards__icon {
+  z-index: 15;
+  width: 60px;
+  height: 60px;
+  fill: var(--c-light-grey);
+  position: absolute;
+  top: 88%;
+  left: 5%;
+}
+
+.portraitsPhoto-cards__icon:hover {
+  cursor: pointer;
+  fill: var(--c-grey-hover);
+}
+
+.portraitsPhoto-cards__icon-reverse {
+  z-index: 15;
+  width: 60px;
+  height: 60px;
+  fill: var(--c-light-grey);
+  position: absolute;
+  top: 88%;
+  right: 5%;
+}
+
+.portraitsPhoto-cards__icon-reverse:hover {
+  cursor: pointer;
+  fill: var(--c-grey-hover);
+}
+
+.center-portraits {
+  position: relative;
+  justify-content: center;
+  gap: 200px;
+  padding: 200px 15px;
+}
+
+.portraitsPhoto-cards__card-imgFourth {
+  max-height: 755px;
+}
+
+.portraitsPhoto-cards__icon-fourth {
+  position: absolute;
+  z-index: 15;
+  width: 90px;
+  height: 90px;
+  fill: var(--c-light-grey);
+  top: 85%;
+  right: 48%;
+  align-self: flex-end;
+}
+
+.portraitsPhoto-cards__icon-fourth:hover {
+  cursor: pointer;
+  fill: var(--c-grey-hover);
+}
+
+.portraitsPhoto-cards__card-img-hiddenFourth {
+  max-width: 50vw;
+  height: auto;
+  object-fit: cover;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .portraitsPhoto-cards__card-img {
+    max-height: 40vw;
+  }
+  .portraitsPhoto-cards__card-img-hiddenFourth {
+    max-width: 85vw;
+  }
+  .center-portraits {
+    gap: 100px;
+  }
+  .portraitsPhoto-cards__card-imgFourth {
+    max-height: 700px;
+  }
+  .photo-cards__main-img {
+    max-width: 1178px;
+  }
+  .portraitsPhoto-cards__icon-fourth {
+    top: 70vw;
+    right: 47vw;
+  }
+  .portraitsPhoto-cards__icon {
+    top: 35vw;
+  }
+  .portraitsPhoto-cards__icon-reverse {
+    top: 35vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .portraitsPhoto-cards__card-img-hidden {
+    max-height: 30vw;
+  }
+  .help_width {
+    width: 26vw;
+    height: auto;
+  }
+  .photo-cards__main-img {
+    max-width: 100vw;
+  }
+  .portraitsPhoto-cards__card-img {
+    max-height: 35vw;
+  }
+  .portraitsPhoto-cards__card-imgFourth {
+    max-height: 55vw;
+  }
+  .portraitsPhoto-cards__card-img-hiddenFourth {
+    max-width: 95vw;
+  }
+  .portraitsPhoto-cards__icon-fourth {
+    top: 77vw;
+    right: 46vw;
+  }
+  .portraitsPhoto-cards__icon {
+    top: 28vw;
+  }
+  .portraitsPhoto-cards__icon-reverse {
+    top: 28vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .portraitsPhoto-cards__icon {
+    width: 7vw;
+    height: 7vw;
+  }
+  .portraitsPhoto-cards__icon-reverse {
+    width: 7vw;
+    height: 7vw;
+  }
+  .portraitsPhoto-cards__icon-fourth {
+    width: 8vw;
+    height: 8vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .photo-cards__main-img {
+    max-width: 95vw;
+  }
+  .portraitsPhoto-cards__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .portraitsPhoto-cards__card-img {
+    max-width: 83vw;
+    max-height: unset;
+  }
+  .portraitsPhoto-cards__icon-reverse {
+    width: 10vw;
+    height: 10vw;
+    top: 93vw;
+  }
+  .portraitsPhoto-cards__icon {
+    width: 10vw;
+    height: 10vw;
+    top: 95vw;
+  }
+  .portraitsPhoto-cards__card-img-hidden {
+    max-height: 85vw;
+  }
+  .help_width {
+    width: 63vw;
+  }
+  .center-portraits {
+    flex-wrap: wrap;
+  }
+  .portraitsPhoto-cards__card-imgFourth {
+    max-height: unset;
+    max-width: 97vw;
+  }
+  .portraitsPhoto-cards__icon-fourth {
+    position: unset;
+    width: 10vw;
+    height: 10vw;
+  }
+  .portraitsPhoto-cards__wrapper {
+    padding: 50px 15px;
+    gap: 70px;
+  }
+}

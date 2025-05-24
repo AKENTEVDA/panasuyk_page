@@ -1,0 +1,71 @@
+.naked-women {
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+}
+.naked-women__main-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.naked-women__icon {
+  padding: 0;
+  flex-shrink: 0;
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  width: 90px;
+  height: 90px;
+  z-index: 30;
+  fill: #acacac;
+}
+
+.naked-women__icon:hover {
+  cursor: pointer;
+  fill: var(--c-black-hover);
+}
+
+.naked-women__hidden-img {
+  z-index: 15;
+  position: absolute;
+  max-width: 1078px;
+  top: -250px;
+  left: 0;
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .naked-women__hidden-img {
+    max-width: 720px;
+    top: 50px;
+  }
+
+  .naked-women__icon {
+    left: 60%;
+    top: 10%;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 992px) {
+  .naked-women__hidden-img {
+    max-width: 590px;
+    top: -170px;
+  }
+  .naked-women__icon {
+    left: 32%;
+    top: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .naked-women__hidden-img {
+    max-width: 430px;
+    top: -200px;
+  }
+  .naked-women__icon {
+    left: 32%;
+    top: 30%;
+  }
+}

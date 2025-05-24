@@ -1,0 +1,63 @@
+.coupleInLove {
+  width: 100%;
+  padding: 100px 0;
+}
+.coupleInLove__wrapper {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.coupleInLove__img-1 {
+  width: 35vw;
+  height: auto;
+  object-fit: cover;
+}
+.coupleInLove__img-2 {
+  width: 15vw;
+  height: auto;
+  object-fit: cover;
+  transition: margin-top 2s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: margin-top;
+  margin-top: 0;
+  position: relative; /* Для лучшего контроля */
+}
+.coupleInLove__img-3 {
+  width: 25vw;
+  height: auto;
+  object-fit: cover;
+  padding: 5% 0;
+}
+
+@media (max-width: 992px) {
+  .coupleInLove__img-1 {
+    width: 40vw;
+  }
+  .coupleInLove__img-2 {
+    width: 20vw;
+  }
+  .coupleInLove__img-3 {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .coupleInLove__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .coupleInLove__img-1 {
+    width: 100%;
+  }
+  .coupleInLove__img-2 {
+    width: 100%;
+    max-width: 358px;
+    margin-top: 0 !important;
+  }
+  .coupleInLove__img-3 {
+    width: 100%;
+    padding: 0;
+  }
+}

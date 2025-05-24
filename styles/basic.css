@@ -24,9 +24,9 @@ p {
   margin: 0;
 }
 
-::selection {
-  background: var(--c-light-grey); /* Цвет фона выделения */
-  color: var(--c-black); /* Цвет текста при выделении */
+body::selection {
+  background: var(--c-light-grey);
+  color: var(--c-black);
 }
 
 .container {
