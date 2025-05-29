@@ -28,7 +28,7 @@
 .naked-women__hidden-img {
   z-index: 15;
   position: absolute;
-  max-width: 1078px;
+  max-width: 50vw;
   top: -250px;
   left: 0;
   display: none;

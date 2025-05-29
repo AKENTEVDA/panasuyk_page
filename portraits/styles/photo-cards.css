@@ -10,7 +10,7 @@
   object-fit: cover;
   margin: 0 auto;
   padding: 0 15px 50px;
-  transition: opacity 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: opacity 2s cubic-bezier(0.33, 1, 0.68, 1);
   will-change: opacity;
 }
 

@@ -1,0 +1,122 @@
+.studio {
+  padding: 100px 0;
+  height: auto;
+}
+
+.studio_main-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 75vw;
+  object-fit: cover;
+  padding: 0 15px 100px;
+}
+
+.studio__wrapper-girl-tights {
+  padding: 100px 15px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+.studio__wrapper-girl-tights-img-left {
+  max-width: 45vw;
+  height: auto;
+  object-fit: cover;
+  transform: scale(0.75);
+  transition: transform 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+  transform-origin: center center;
+}
+.studio__wrapper-girl-tights-img-right {
+  max-width: 45vw;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 2s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: opacity;
+}
+.studio__wrapper-plasticGirl {
+  padding: 100px 15px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.studio__wrapper-plasticGirl-img {
+  max-width: 27vw;
+  height: auto;
+  object-fit: cover;
+}
+.studio__wrapper-studioTsenev {
+  padding: 100px 15px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+.studio__wrapper-studioTsenev-img-left {
+  max-width: 45vw;
+  height: auto;
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform;
+  transform: scale(0.75);
+  transform-origin: center center;
+}
+.studio__wrapper-studioTsenev-img-right {
+  max-width: 45vw;
+  height: auto;
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform;
+  transform: scale(1);
+  transform-origin: center center;
+}
+
+@media (max-width: 768px) {
+  .studio {
+    padding: 50px 0;
+  }
+  .studio_main-img {
+    padding: 0 15px 50px;
+  }
+  .studio__wrapper-plasticGirl {
+    padding: 50px 15px;
+  }
+  .studio__wrapper-studioTsenev {
+    padding: 50px 15px;
+  }
+}
+
+@media (max-width: 620px) {
+  .studio__wrapper-girl-tights {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+  }
+  .studio__wrapper-girl-tights-img-left {
+    max-width: 85vw;
+  }
+  .studio__wrapper-girl-tights-img-right {
+    max-width: 85vw;
+  }
+  .studio__wrapper-plasticGirl {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+  }
+  .studio__wrapper-plasticGirl-img {
+    max-width: 85vw;
+  }
+  .studio__wrapper-studioTsenev {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+  }
+  .studio__wrapper-studioTsenev-img-left {
+    max-width: 85vw;
+    transform: scale(1) !important;
+  }
+  .studio__wrapper-studioTsenev-img-right {
+    max-width: 85vw;
+    transform: scale(1) !important;
+  }
+}

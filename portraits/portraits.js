@@ -357,7 +357,6 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   let isVisible = false;
 
-  // Функция для показа изображения
   function showImage() {
     hiddenImg.style.display = "block";
     setTimeout(() => {
@@ -366,7 +365,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 10);
   }
 
-  // Функция для скрытия изображения
   function hideImage() {
     hiddenImg.style.opacity = "0";
     setTimeout(() => {
@@ -375,28 +373,345 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 300);
   }
 
-  // Обработчик клика по иконке
   icon.addEventListener("click", function (e) {
     e.stopPropagation();
     isVisible ? hideImage() : showImage();
   });
 
-  // Обработчик клика по документу
   document.addEventListener("click", function () {
     if (isVisible) {
       hideImage();
     }
   });
 
-  // Обработчик клика по изображению
   hiddenImg.addEventListener("click", function (e) {
     e.stopPropagation();
   });
 
-  // Закрытие по клавише Esc
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && isVisible) {
       hideImage();
     }
   });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const targetImg = document.querySelector(".secondBlockPhoto__bay-img-2");
+  const section = document.querySelector(".secondBlockPhoto");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const visibilityRatio = entry.intersectionRatio;
+
+        const scale = 0.7 + visibilityRatio * 0.3;
+
+        targetImg.style.transform = `scale(${scale})`;
+      });
+    },
+    {
+      threshold: Array.from({ length: 20 }, (_, i) => i * 0.05),
+      rootMargin: "0px 0px -100px 0px",
+    }
+  );
+
+  observer.observe(section);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const main_img = document.querySelector(".secondBlockPhoto__bay-img");
+  const wrapper = document.querySelector(".secondBlockPhoto__wrapper-antohaMC");
+
+  const fadeStart = 0.3;
+  const fadeEnd = 0.6;
+  const minOpacity = 0;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const ratio = entry.intersectionRatio;
+
+        let opacity;
+        if (ratio < fadeStart) {
+          opacity = 1;
+        } else if (ratio > fadeEnd) {
+          opacity = minOpacity;
+        } else {
+          opacity =
+            1 -
+            ((ratio - fadeStart) / (fadeEnd - fadeStart)) * (1 - minOpacity);
+        }
+
+        main_img.style.opacity = opacity;
+      });
+    },
+    {
+      threshold: Array.from({ length: 20 }, (_, i) => i * 0.05),
+    }
+  );
+
+  observer.observe(wrapper);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const icons = document.querySelectorAll(".moscowPeople__icon");
+
+  icons.forEach((icon) => {
+    icon.addEventListener("click", function () {
+      // Находим родительский блок
+      const leftWrapper = this.closest(".moscowPeople__wrapper-ironMan-left");
+
+      // Находим изображения в этом блоке
+      const img1 = leftWrapper.querySelector(".moscowPeople__ironMan-img-1");
+      const img3 = leftWrapper.querySelector(".moscowPeople__ironMan-img-3");
+
+      // Переключаем видимость
+      if (img1.style.opacity !== "0") {
+        // Плавное исчезновение img1 и появление img3
+        img1.style.opacity = "0";
+        img1.style.transition = "opacity 0.5s ease";
+
+        setTimeout(() => {
+          img1.style.display = "none";
+          img3.style.display = "block";
+          img3.style.opacity = "0";
+
+          setTimeout(() => {
+            img3.style.opacity = "1";
+            img3.style.transition = "opacity 0.5s ease";
+          }, 10);
+        }, 500); // Должно совпадать с длительностью анимации
+      } else {
+        // Обратное переключение
+        img3.style.opacity = "0";
+        img3.style.transition = "opacity 0.5s ease";
+
+        setTimeout(() => {
+          img3.style.display = "none";
+          img1.style.display = "block";
+          img1.style.opacity = "0";
+
+          setTimeout(() => {
+            img1.style.opacity = "1";
+            img1.style.transition = "opacity 0.5s ease";
+          }, 10);
+        }, 500);
+      }
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const ironManWrapper = document.querySelector(
+    ".moscowPeople__wrapper-ironMan"
+  );
+  const moscowSection = document.querySelector(
+    ".moscowPeople__wrapper-ironMan-left"
+  );
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const opacity = 0.2 + entry.intersectionRatio * 0.8;
+        ironManWrapper.style.opacity = opacity;
+      });
+    },
+    {
+      threshold: Array.from({ length: 20 }, (_, i) => i * 0.05),
+      rootMargin: "0px 0px -100px 0px",
+    }
+  );
+
+  observer.observe(moscowSection);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const img1 = document.querySelector(".setInForest__wrapper-river-img-1");
+  const riverSection = document.querySelector(".setInForest__wrapper-river");
+  let lastScrollPosition = window.scrollY;
+  let isScrollingDown = true;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+    isScrollingDown = currentScroll > lastScrollPosition;
+    lastScrollPosition = currentScroll;
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const ratio = entry.intersectionRatio;
+
+        if (isScrollingDown) {
+          // При скролле вниз: 0.75 → 1
+          const scale = 0.75 + ratio * 0.25;
+          img1.style.transform = `scale(${scale})`;
+        } else {
+          // При скролле вверх: 1 → 0.75
+          const scale = 1 - (1 - ratio) * 0.25;
+          img1.style.transform = `scale(${scale})`;
+        }
+      });
+    },
+    {
+      threshold: Array.from({ length: 20 }, (_, i) => i * 0.05),
+      rootMargin: "0px 0px -100px 0px",
+    }
+  );
+
+  observer.observe(riverSection);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const img1 = document.querySelector(".studio__wrapper-girl-tights-img-left");
+  const riverSection = document.querySelector(".studio__wrapper-girl-tights");
+  let lastScrollPosition = window.scrollY;
+  let isScrollingDown = true;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+    isScrollingDown = currentScroll > lastScrollPosition;
+    lastScrollPosition = currentScroll;
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const ratio = entry.intersectionRatio;
+
+        if (isScrollingDown) {
+          // При скролле вниз: 0.75 → 1
+          const scale = 0.75 + ratio * 0.25;
+          img1.style.transform = `scale(${scale})`;
+        } else {
+          // При скролле вверх: 1 → 0.75
+          const scale = 1 - (1 - ratio) * 0.25;
+          img1.style.transform = `scale(${scale})`;
+        }
+      });
+    },
+    {
+      threshold: Array.from({ length: 20 }, (_, i) => i * 0.05),
+      rootMargin: "0px 0px -100px 0px",
+    }
+  );
+
+  observer.observe(riverSection);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const secondPortrait = document.querySelector(
+    ".studio__wrapper-girl-tights-img-right"
+  );
+  const nakedWomenSection = document.querySelector(
+    ".studio__wrapper-plasticGirl"
+  );
+
+  const fadeStart = 0.2;
+  const fadeEnd = 0.7;
+  const minOpacity = 0;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const ratio = entry.intersectionRatio;
+
+        // Плавный расчет прозрачности
+        let opacity;
+        if (ratio < fadeStart) {
+          opacity = 1; // Полностью видим
+        } else if (ratio > fadeEnd) {
+          opacity = minOpacity; // Минимальная видимость
+        } else {
+          // Плавное изменение между fadeStart и fadeEnd
+          opacity =
+            1 -
+            ((ratio - fadeStart) / (fadeEnd - fadeStart)) * (1 - minOpacity);
+        }
+
+        secondPortrait.style.opacity = opacity;
+      });
+    },
+    {
+      threshold: Array.from({ length: 20 }, (_, i) => i * 0.05), // 20 точек отслеживания
+    }
+  );
+
+  observer.observe(nakedWomenSection);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const img1 = document.querySelector(".studio__wrapper-studioTsenev-img-left");
+  const riverSection = document.querySelector(".studio__wrapper-studioTsenev");
+  let lastScrollPosition = window.scrollY;
+  let isScrollingDown = true;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+    isScrollingDown = currentScroll > lastScrollPosition;
+    lastScrollPosition = currentScroll;
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const ratio = entry.intersectionRatio;
+
+        if (isScrollingDown) {
+          // При скролле вниз: 0.75 → 1
+          const scale = 0.75 + ratio * 0.25;
+          img1.style.transform = `scale(${scale})`;
+        } else {
+          // При скролле вверх: 1 → 0.75
+          const scale = 1 - (1 - ratio) * 0.25;
+          img1.style.transform = `scale(${scale})`;
+        }
+      });
+    },
+    {
+      threshold: Array.from({ length: 20 }, (_, i) => i * 0.05),
+      rootMargin: "0px 0px -100px 0px",
+    }
+  );
+
+  observer.observe(riverSection);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const img1 = document.querySelector(
+    ".studio__wrapper-studioTsenev-img-right"
+  );
+  const riverSection = document.querySelector(".studio__wrapper-studioTsenev");
+  let lastScrollPosition = window.scrollY;
+  let isScrollingDown = true;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+    isScrollingDown = currentScroll > lastScrollPosition;
+    lastScrollPosition = currentScroll;
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const ratio = entry.intersectionRatio;
+
+        if (isScrollingDown) {
+          // При скролле вниз: 0.75 → 1
+          const scale = 1 - ratio * 0.25;
+          img1.style.transform = `scale(${scale})`;
+        } else {
+          // При скролле вверх: 1 → 0.75
+          const scale = 0.75 + (1 - ratio) * 0.25;
+          img1.style.transform = `scale(${scale})`;
+        }
+      });
+    },
+    {
+      threshold: Array.from({ length: 20 }, (_, i) => i * 0.05),
+      rootMargin: "0px 0px -100px 0px",
+    }
+  );
+
+  observer.observe(riverSection);
 });
