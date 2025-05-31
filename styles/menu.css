@@ -65,6 +65,11 @@
   transition: color 0.3s ease;
 }
 
+.menu-link_portfolio:hover {
+  color: white !important;
+  cursor: default !important;
+}
+
 .menu-link:hover {
   color: var(--c-light-grey);
 }
@@ -137,27 +142,41 @@
   right: 5%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 28px;
 }
 
+.contact-link {
+  display: flex;
+  justify-content: center;
+}
+.contact-link_inst {
+  position: relative;
+}
+.contact-link_inst::before {
+  /* padding-top: 5px;
+  font-size: 20px; */
+  content: "*";
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: -8px;
+}
 .menu-instagram__icon {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
 }
 
 .menu-instagram__icon:hover {
-  color: var(--c-light-grey);
+  opacity: 0.5;
 }
 
 .menu-tg__icon {
   width: 60px;
   height: 60px;
-  display: block;
-  margin: 0 auto;
 }
 
 .menu-tg__icon:hover {
-  color: var(--c-light-grey);
+  opacity: 0.5;
 }
 
 @media (max-width: 992px) {
@@ -165,16 +184,16 @@
     margin: 10px 0;
   }
   .contact-link__wrapper {
-    gap: 10px;
+    gap: 15px;
   }
   .menu-instagram__icon {
-    width: 55px;
-    height: 55px;
+    width: 5vw;
+    height: 5vw;
   }
 
   .menu-tg__icon {
-    width: 50px;
-    height: 50px;
+    width: 6vw;
+    height: 6vw;
   }
   .menu-close {
     font-size: 18px;
@@ -194,13 +213,13 @@
   .menu-link {
     margin: 5px 0;
   }
-  .contact-link__wrapper {
-    gap: 5px;
-  }
+  /* .contact-link__wrapper {
+    gap: 15px;
+  } */
   .menu-list {
     gap: 10px;
   }
-  .menu-instagram__icon {
+  /* .menu-instagram__icon {
     width: 55px;
     height: 55px;
   }
@@ -208,7 +227,7 @@
   .menu-tg__icon {
     width: 50px;
     height: 50px;
-  }
+  } */
   .menu-close {
     font-size: 18px;
   }
@@ -235,18 +254,18 @@
     font-size: 4vw;
   }
   .menu-instagram__icon {
-    width: 45px;
-    height: 45px;
+    width: 8vw;
+    height: 8vw;
   }
 
   .menu-tg__icon {
-    width: 40px;
-    height: 40px;
+    width: 9vw;
+    height: 9vw;
   }
 }
 
 @media (max-width: 430px) {
-  .menu-instagram__icon {
+  /* .menu-instagram__icon {
     width: 35px;
     height: 35px;
   }
@@ -254,7 +273,7 @@
   .menu-tg__icon {
     width: 30px;
     height: 30px;
-  }
+  } */
 
   .contact-link__wrapper {
     top: 40%;
