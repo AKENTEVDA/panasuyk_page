@@ -1,0 +1,57 @@
+.sobaka {
+  padding: 100px 0;
+}
+
+.sobaka__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+  padding: 100px 15px;
+}
+
+.sobaka__img {
+  object-fit: cover;
+  height: 45vw;
+}
+
+.sobaka__wraper-eleonora {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: end;
+}
+
+.sobaka__wrapper-magazine {
+  padding: 100px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sobaka__img-interview {
+  width: 45vw;
+}
+
+@media (max-width: 992px) {
+  .sobaka__img-interview {
+    width: 75vw;
+  }
+  .sobaka__wrapper-magazine {
+    gap: 10px;
+  }
+  .sobaka__img {
+    height: 60vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .sobaka__img-interview {
+    width: 90vw;
+  }
+  .sobaka__wrapper-magazine {
+    gap: 10px;
+  }
+  .sobaka__img {
+    height: 60vw;
+  }
+}

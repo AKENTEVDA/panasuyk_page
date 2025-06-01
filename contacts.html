@@ -12,23 +12,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="contacts/contacts.css" />
-    <script src="scripts/main.js" defer></script>
+    <script src="contacts/contacts.js" defer></script>
   </head>
   <body>
-    <section class="menu-modal" aria-hidden="true">
+    <section class="menu-modal" aria-hidden="true" aria-label="mobile-menu">
       <div class="menu-container" aria-hidden="true">
         <nav class="menu-nav">
           <ul class="menu-list">
-            <li><a href="#" class="menu-link">portfolio</a></li>
+            <li>
+              <a href="#" class="menu-link menu-link_portfolio">portfolio</a>
+            </li>
             <li>
               <a href="portraits.html" class="menu-link__portfolio"
                 >portraits</a
               >
             </li>
-            <li><a href="#" class="menu-link__portfolio">projects</a></li>
-            <li><a href="#" class="menu-link__portfolio">planet</a></li>
+            <li>
+              <a href="projects.html" class="menu-link__portfolio">projects</a>
+            </li>
+            <li>
+              <a href="planet.html" class="menu-link__portfolio">planet</a>
+            </li>
             <li><a href="contacts.html" class="menu-link">contact</a></li>
-            <li><a href="#" class="menu-link">about</a></li>
+            <li><a href="about.html" class="menu-link">about</a></li>
           </ul>
         </nav>
       </div>
@@ -50,8 +56,7 @@
           target="_blank"
           class="contact-link contact-link_inst"
         >
-          <!-- <p class="menu-instagram__icon-contacts--link-p">*</p> -->
-          <svg width="48" height="48" class="menu-instagram__icon">
+          <svg class="menu-instagram__icon">
             <use href="assets/sprites.svg#instagram-icon"></use>
           </svg>
         </a>
@@ -61,12 +66,8 @@
           target="_blank"
           class="contact-link"
         >
-          <svg width="48" height="48" class="menu-tg__icon">
-            <use
-              href="assets/sprites.svg#tg-icon"
-              width="100%"
-              height="100%"
-            ></use>
+          <svg class="menu-tg__icon">
+            <use href="assets/sprites.svg#tg-icon"></use>
           </svg>
         </a>
       </div>

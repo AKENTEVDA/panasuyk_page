@@ -1,4 +1,3 @@
-@import url("../index.css");
 @import url("../portraits/portraits.css");
 
 .contacts-section {
@@ -64,8 +63,6 @@
   object-fit: cover;
 }
 
-.contacts-section__right-mail-link {
-}
 .mail_pre-title {
   text-align: end;
 }
@@ -119,9 +116,6 @@
 
 .menu-wa__icon-contacts:hover {
   opacity: 0.5;
-}
-
-.contacts-section__right-tgchannel-title {
 }
 
 .menu-instagram__icon-contacts--link {
@@ -266,7 +260,7 @@
     padding-right: 25px;
     color: var(--c-black-hover);
   }
-  .header__logo {
+  .header__logo-contacts {
     color: var(--c-black);
     padding: 10px 15px 35px;
     font-size: 36px;

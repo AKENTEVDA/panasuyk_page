@@ -1,0 +1,47 @@
+.flowers {
+  padding: 100px 0;
+}
+
+.flowers__wrapper {
+  padding: 50px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.flowers__img-big {
+  width: 45vw;
+  object-fit: cover;
+}
+
+.flowers__img-little {
+  height: 25vw;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .flowers__wrapper {
+    padding: 35px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flowers__img-big {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .flowers__wrapper {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .flowers__img-big {
+    width: 90vw;
+  }
+  .flowers__img-little {
+    height: unset;
+    width: 75vw;
+  }
+}
