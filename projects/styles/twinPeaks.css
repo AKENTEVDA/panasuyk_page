@@ -1,0 +1,86 @@
+.twinPeaks {
+  /* width: 100%; */
+  padding: 250px 0;
+}
+
+.twinPeaks__title {
+  margin-bottom: 10px;
+}
+.twinPeaks__wrapper-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.twinPeaks__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 80%;
+  height: 50vw; /* Задайте нужную высоту */
+}
+
+.twinPeaks__img {
+  position: absolute;
+  width: 75vw;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+  opacity: 0;
+  z-index: 1;
+}
+
+.twinPeaks__img:first-child {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 2;
+}
+
+.twinPeaks__icon-left {
+  width: 24px;
+  height: 40px;
+  fill: var(--c-light-grey);
+  cursor: pointer;
+  z-index: 5;
+  transition: transform 0.3s ease;
+}
+
+.twinPeaks__icon-right {
+  width: 24px;
+  height: 40px;
+  fill: var(--c-light-grey);
+  cursor: pointer;
+  z-index: 3;
+  transition: transform 0.3s ease;
+}
+
+.twinPeaks__icon-right,
+.twinPeaks__icon-left {
+}
+
+.twinPeaks__icon-right:hover,
+.twinPeaks__icon-left:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.twinPeaks__icon:first-child {
+  margin-right: 20px;
+}
+
+.twinPeaks__icon:last-child {
+  margin-left: 20px;
+}
+
+@media (max-width: 620px) {
+  .twinPeaks__icon-left {
+    width: 18px;
+    height: 30px;
+  }
+
+  .twinPeaks__icon-right {
+    width: 18px;
+    height: 30px;
+  }
+}

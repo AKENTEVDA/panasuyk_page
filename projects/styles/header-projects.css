@@ -29,6 +29,8 @@
 
 .container-projects {
   text-align: center;
+  /* max-width: 1890px;
+  margin: 0 auto; */
 }
 
 .header-projects__title {
