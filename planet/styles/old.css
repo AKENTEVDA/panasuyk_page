@@ -1,0 +1,33 @@
+.old {
+  padding: 150px 0;
+  height: auto;
+}
+.old__wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  align-items: center;
+}
+.old__img {
+  height: 42vw;
+  object-fit: cover;
+}
+
+@media (max-width: 620px) {
+  .old {
+    padding: 50px 0;
+    height: auto;
+  }
+  .old__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .old__img {
+    height: initial;
+    width: 75vw;
+  }
+  .burger-planet {
+    color: var(--c-grey-hover);
+  }
+}

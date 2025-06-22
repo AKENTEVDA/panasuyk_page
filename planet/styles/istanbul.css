@@ -1,0 +1,54 @@
+.istanbul {
+  padding: 150px 15px 55vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.istanbul .artDecor__title {
+  text-align: start;
+}
+.istanbul__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 75px;
+  position: relative;
+  height: auto;
+}
+
+.istanbul__main-img {
+  width: 40vw;
+  object-fit: cover;
+  z-index: 5;
+}
+
+.istanbul__img {
+  z-index: 2;
+  position: absolute;
+  width: 60vw;
+  top: 28vw;
+  left: -10vw;
+  transform: scale(1);
+  transition: transform 0.1s linear, top 0.1s linear;
+}
+
+@media (max-width: 620px) {
+  .istanbul {
+    padding: 50px 15px 50px;
+  }
+
+  .istanbul__main-img {
+    width: 60vw;
+  }
+
+  .istanbul__wrapper {
+    gap: 50px;
+  }
+  .istanbul__img {
+    position: initial;
+    width: 70vw;
+  }
+}

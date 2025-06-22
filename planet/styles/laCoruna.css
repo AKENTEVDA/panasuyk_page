@@ -1,0 +1,64 @@
+.laCoruna {
+  padding: 150px 0;
+  height: auto;
+}
+
+.laCoruna__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 15px;
+}
+
+.laCoruna__left-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.laCoruna__title-img {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.laCoruna__first-wrapper__img {
+  width: 20vw;
+  object-fit: cover;
+}
+
+.laCoruna__img-down {
+  width: 50vw;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.laCoruna__img-down:hover {
+  opacity: 1 !important;
+  transition: opacity 0.5s linear;
+}
+
+.laCoruna__img-right {
+  margin-top: 3%;
+  width: 35vw;
+  object-fit: cover;
+  transition: opacity 0.1s linear;
+}
+
+.laCoruna__first-wrapper__img,
+.laCoruna__img-right {
+  transition: transform 0.1s linear;
+}
+
+@media (max-width: 620px) {
+  .laCoruna {
+    padding: 50px 0;
+  }
+  .laCoruna__img-down {
+    width: 60vw;
+  }
+  .laCoruna__img-right {
+    margin-top: 7%;
+  }
+}

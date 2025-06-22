@@ -93,6 +93,9 @@
 }
 
 @media (max-width: 620px) {
+  .yuga {
+    padding: 50px 0;
+  }
   .yuga__right-img {
     width: 65vw;
   }

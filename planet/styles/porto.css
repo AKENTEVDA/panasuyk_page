@@ -1,0 +1,61 @@
+.porto {
+  padding: 150px 0;
+  height: auto;
+}
+
+.container__planet {
+}
+
+.porto__wrapper-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 15px 50px;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+.artDecor__title {
+}
+
+.porto__main-img {
+  width: 65vw;
+  object-fit: cover;
+}
+.porto__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  padding: 50px 15px;
+}
+.porto__img {
+  height: 55vw;
+  object-fit: cover;
+}
+.porto__wrapper-end {
+  display: flex;
+  justify-content: end;
+}
+.porto__last-img {
+  width: 65vw;
+  object-fit: cover;
+  padding: 0 115px 0 0;
+}
+
+@media (max-width: 620px) {
+  .porto {
+    padding: 50px 0;
+  }
+  .porto__last-img {
+    width: 65vw;
+    object-fit: cover;
+    padding: initial;
+    padding-right: 25px;
+  }
+  .porto__wrapper {
+    padding: 25px 15px;
+  }
+  .porto__wrapper-title {
+    padding: 0 15px 25px;
+  }
+}

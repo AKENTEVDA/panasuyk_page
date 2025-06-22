@@ -1,0 +1,84 @@
+.lisbon {
+  padding: 150px 0;
+  height: auto;
+}
+
+.lisbon__wrapper-title {
+  margin: 0 auto;
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 10px;
+  padding: 50px 15px;
+}
+
+.lisbon__img-wrapper {
+  position: relative;
+}
+
+.lisbon__main-img,
+.lisbon__main-img-bw {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75vw;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lisbon__main-img {
+  opacity: 1;
+  z-index: 2;
+}
+
+.lisbon__main-img-bw {
+  opacity: 0;
+  display: block;
+  z-index: 3;
+}
+
+.lisbon__wrapper-title:hover .lisbon__main-img {
+  opacity: 0;
+}
+
+.lisbon__wrapper-title:hover .lisbon__main-img-bw {
+  opacity: 1;
+}
+
+.lisbon__main-img-scale {
+  margin: 0 auto;
+  width: 85vw;
+  object-fit: cover;
+  scale: 1;
+  padding: 50px 15px;
+  transition: transform 0.1s linear;
+}
+.lisbon__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  padding: 100px 15px;
+}
+.lisbon__wrapper__img {
+  height: 50vw;
+  object-fit: cover;
+}
+.lisbon__wrapper__img-right {
+  height: 40vw;
+  object-fit: cover;
+}
+
+@media (max-width: 620px) {
+  .lisbon {
+    padding: 50px 0;
+  }
+  .lisbon__main-img-scale {
+    padding: 100px 15px 25px;
+  }
+  .lisbon__wrapper {
+    padding: 50px 15px;
+  }
+}

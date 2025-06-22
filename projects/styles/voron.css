@@ -1,0 +1,45 @@
+.voron {
+  padding: 150px 0;
+  height: auto;
+}
+
+.voron__wrapper {
+  display: flex;
+  justify-content: end;
+  height: auto;
+}
+
+.voron__right-img {
+  align-self: end;
+  position: relative;
+}
+
+.voron__main-img {
+  width: 70vw;
+  z-index: -5;
+  object-fit: cover;
+}
+
+.voron__title-img {
+  position: absolute;
+  top: -20px;
+  left: -35%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 5;
+}
+
+.voron__title {
+  text-align: start;
+}
+.voron__img {
+  width: 27vw;
+  object-fit: cover;
+}
+
+@media (max-width: 620px) {
+  .voron {
+    padding: 50px 0;
+  }
+}

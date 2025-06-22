@@ -1,0 +1,199 @@
+.dagestan {
+  padding: 150px 0;
+  height: auto;
+}
+
+.container__planet {
+  text-align: center;
+  max-width: 1690px;
+  margin: 0 auto;
+}
+
+.dagestan__first-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 0 20px;
+}
+.dagestan__title-img {
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dagestan__title {
+  text-align: start;
+  position: relative;
+}
+
+.dagestan__first-wrapper__img {
+  height: 50vw;
+  object-fit: cover;
+}
+
+.dagestan__first-wrapper__img-little {
+  align-self: center;
+  height: 30vw;
+  object-fit: cover;
+  transition: height 1.7s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: height; /* Оптимизация производительности */
+}
+
+.sup-year {
+  font-size: 1vw;
+  padding: 0.5vw;
+}
+
+.dagestan__women-wrapper {
+  padding: 150px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dagestan__women-block {
+  display: flex;
+}
+
+.dagestan__women-wrapper__img {
+  height: 33vw;
+  object-fit: cover;
+}
+
+.dagestan__women-wrapper__img-main {
+  height: 45vw;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  transform: scale(0.75);
+  opacity: 0.9;
+  filter: brightness(0.7);
+  transition: all 1.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity, filter;
+}
+
+.dagestan__women-wrapper__img-main.animated {
+  transform: scale(1);
+  opacity: 1;
+  filter: brightness(1);
+}
+
+.dagestan__hourse-block {
+  position: relative;
+  padding: 150px 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px; /* Начальное значение */
+  transition: gap 1.7s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: gap; /* Оптимизация производительности */
+}
+.dagestan__hourse-block__img {
+  /* width: 30vw;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.33, 1, 0.68, 1),
+    width 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform, width; */
+  width: 15vw;
+  object-fit: cover;
+  transform-origin: center;
+  transition: transform 0.1s linear;
+}
+.dagestan__hourse-block__img-main {
+  height: 50vw;
+  object-fit: cover;
+}
+
+.dagestan__plane-block {
+  padding: 75px 15px;
+  display: flex;
+  justify-content: end;
+}
+.dagestan__hourse-plane__img {
+  width: 60vw;
+  object-fit: cover;
+}
+.dagestan__field-block {
+  padding: 75px 15px;
+  display: flex;
+  justify-content: start;
+}
+.dagestan__field-block__img {
+  width: 60vw;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .sup-year {
+    font-size: 1.5vw;
+    padding: 1vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .dagestan {
+    padding: 50px 0;
+    height: auto;
+  }
+  .dagestan__first-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .dagestan__first-wrapper__img {
+    height: initial;
+    width: 75vw;
+  }
+  .dagestan__first-wrapper__img-little {
+    align-self: center;
+    height: initial !important;
+    width: 75vw;
+    object-fit: cover;
+  }
+  .sup-year {
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  .dagestan__women-wrapper {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .dagestan__women-block {
+    display: flex;
+    justify-content: center;
+  }
+  .dagestan__women-wrapper__img {
+    height: initial;
+    width: 45vw;
+    object-fit: cover;
+  }
+  /* .dagestan__hourse-block {
+    padding: 50px 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dagestan__hourse-block__img-main {
+    width: 35vw;
+    object-fit: cover;
+  } */
+  .dagestan__hourse-block {
+    height: auto;
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 50px !important;
+  }
+
+  .dagestan__hourse-block__img,
+  .dagestan__hourse-block__img-main {
+    width: 80% !important;
+    transform: none !important;
+  }
+  .dagestan__field-block {
+    padding: 25px 15px;
+  }
+  .dagestan__plane-block {
+    padding: 25px 15px;
+  }
+}
