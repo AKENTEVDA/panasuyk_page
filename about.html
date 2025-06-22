@@ -11,6 +11,297 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="about/about.css" />
+    <script src="about/about.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <section class="menu-modal" aria-hidden="true" aria-label="mobile-menu">
+      <div class="menu-container" aria-hidden="true">
+        <nav class="menu-nav">
+          <ul class="menu-list">
+            <li>
+              <a href="#" class="menu-link menu-link_portfolio">portfolio</a>
+            </li>
+            <li>
+              <a href="portraits.html" class="menu-link__portfolio"
+                >portraits</a
+              >
+            </li>
+            <li>
+              <a href="projects.html" class="menu-link__portfolio">projects</a>
+            </li>
+            <li>
+              <a href="planet.html" class="menu-link__portfolio">planet</a>
+            </li>
+            <li><a href="contacts.html" class="menu-link">contact</a></li>
+            <li><a href="about.html" class="menu-link">about</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button class="menu-close" aria-label="Close menu">
+        <svg width="24" height="24" class="menu-close__icon">
+          <use
+            href="assets/sprites.svg#close-icon"
+            width="100%"
+            height="100%"
+          ></use>
+        </svg>
+        close
+      </button>
+      <a href="index.html" class="menu-modal__main-link">main</a>
+      <div class="contact-link__wrapper">
+        <a
+          href="https://www.instagram.com/panasyuk._?igsh=MW1mNDNmbzJrbnR3OQ=="
+          rel="noopener noreferrer"
+          target="_blank"
+          class="contact-link contact-link_inst"
+        >
+          <svg class="menu-instagram__icon">
+            <use href="assets/sprites.svg#instagram-icon"></use>
+          </svg>
+        </a>
+        <a
+          href="https://t.me/panasyukseeyou"
+          rel="noopener noreferrer"
+          target="_blank"
+          class="contact-link"
+        >
+          <svg class="menu-tg__icon">
+            <use href="assets/sprites.svg#tg-icon"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <header class="header-projects" aria-label="header of projects-page">
+      <div class="container-projects">
+        <div class="header-projects__wrapper">
+          <div class="wrapper-menu" aria-label="menu-burger link">
+            <svg class="burger-menu burger-planet">
+              <use href="assets/sprites.svg#burger-icon"></use>
+            </svg>
+            <a href="#" class="title-menu header-projects__title-menu">menu</a>
+          </div>
+          <a
+            href="index.html"
+            class="header-projects__link-logo"
+            ara-label="link to main page"
+            ><h2 class="header__logo header-projects__logo">
+              elena panasyuk
+            </h2></a
+          >
+        </div>
+        <h2 class="first-section__wrapper-title header-projects__title">
+          about
+        </h2>
+      </div>
+    </header>
+    <main>
+      <section class="bio">
+        <div class="bio__container">
+          <div class="bio__wrapper-main">
+            <img
+              src="./assets/img/about/panasyuk_1.webp"
+              class="bio__wrapper-main__img"
+              alt="1 photo of Elena Panasyuk"
+            />
+            <div class="bio__wrapper-main__text">
+              <h2 class="bio__wrapper-main__text__1-block">
+                <span class="text-ru">Привет, меня зовут</span>
+                <span class="text-en hidden">Hello, my name is</span>
+                <span class="text-ru bio__bold-text">Елена Панасюк</span>
+                <span class="text-en hidden bio__bold-text">Elena Panasyuk</span
+                >,<br />
+                <span class="text-ru">и я чертовски хороша в портретах.</span>
+                <span class="text-en hidden"
+                  >and I'm damn good at portraits.</span
+                >
+              </h2>
+              <h2 class="bio__wrapper-main__text__1-block">
+                <span class="text-ru"
+                  >Меня выбирают, потому что я даю то, что ищет каждый
+                  человек.<br />
+                  Я даю</span
+                >
+                <span class="text-en hidden"
+                  >People choose me because I provide what everyone is looking
+                  for.<br />
+                  I give</span
+                >
+                <span class="text-ru bio__bold-text">свободу</span>
+                <span class="text-ru"
+                  >— свободу быть собой, которую ограничивают лишь рамки
+                  кадра.<br />
+                  И я даю</span
+                >
+                <span class="text-en hidden"
+                  >— the <span class="bio__bold-text">freedom</span> to be
+                  yourself, which is limited only by the frame.<br />
+                  And I give <span class="bio__bold-text">emotion</span></span
+                >
+                <span class="text-ru bio__bold-text">эмоцию</span>
+                <span class="text-ru"
+                  >— как в процессе, так и результатом. И каждый берёт то, что
+                  ему действительно нужно.</span
+                >
+                <span class="text-en hidden"
+                  >— both in the process and in the result. And everyone takes
+                  what they really need.</span
+                >
+              </h2>
+              <button class="bio__btn-en">en</button>
+            </div>
+          </div>
+          <div class="bio__wrapper-tool">
+            <div class="bio__wrapper-main__text">
+              <h2 class="bio__wrapper-main__text__1-block tool-text">
+                <span class="text-ru"
+                  >Фотография учит меня принимать человека безусловно. Этому же
+                  я хочу научить своих героев:</span
+                >
+                <span class="text-en hidden"
+                  >Photography teaches me to accept a person unconditionally.
+                  That's what I want to teach my characters:</span
+                >
+                <span class="text-ru bio__bold-text"
+                  >принимать всего себя полностью,<br
+                /></span>
+                <span class="text-en hidden bio__bold-text"
+                  >to accept yourself completely,<br
+                /></span>
+                <span class="text-ru">и я чертовски хороша в портретах.</span>
+                <span class="text-en hidden"
+                  >and I'm damn good at portraits.</span
+                >
+                <span class="text-ru"
+                  >со всеми демонами, слабостями и недостатками, которые
+                  зачастую ими и не являются.</span
+                >
+                <span class="text-en hidden">
+                  with all the demons, weaknesses and imperfections, which are
+                  often not what they seem.</span
+                >
+              </h2>
+              <h2 class="bio__wrapper-main__text__1-block tool-text">
+                <span class="text-ru"
+                  >Сама съёмка и снимки становятся<br
+                /></span>
+                <span class="text-en hidden"
+                  >The shoot and the photos become a <br
+                /></span>
+                <span class="text-ru bio__bold-text"
+                  >инструментом для саморефлексии,<br
+                /></span>
+                <span class="text-ru"
+                  >для памяти о важном этапе. И меня всегда радует, что ко мне
+                  приходят люди, которые стремятся понять свои эмоции, осознают
+                  свои действия и свои выборы.</span
+                >
+                <span class="text-en hidden"
+                  ><span class="bio__bold-text">tool for self-reflection,</span>
+                  for memories of an important stage. And I am always pleased
+                  that people come to me who strive to understand their
+                  emotions, realize their actions and choices.</span
+                >
+              </h2>
+              <button class="bio__btn-en bio__btn-en_start">en</button>
+            </div>
+            <div class="bio__wrapper-tool__wrapper-img">
+              <img
+                src="./assets/img/about/panasyuk_2.webp"
+                class="tool-img"
+                alt="2 photo of Elena Panasyuk"
+              />
+              <img
+                src="./assets/img/about/panasyuk_3.webp"
+                class="tool-img"
+                alt="3 photo of Elena Panasyuk"
+              />
+            </div>
+          </div>
+          <div class="bio__wrapper-deep">
+            <img
+              src="./assets/img/about/panasyuk_4.webp"
+              class="bio__wrapper-deep__img"
+              alt="4 photo of lady by Elena Panasyuk"
+            />
+            <div class="bio__wrapper-main__text">
+              <h2 class="bio__wrapper-main__text__1-block deep-text">
+                <span class="text-ru"
+                  >Это глубоко погружающий, интимный процесс, который требует
+                  бережного отношения.<br
+                /></span>
+                <span class="text-en hidden"
+                  >This is a deeply immersive, intimate process that requires
+                  careful handling.<br
+                /></span>
+                <span class="text-ru"
+                  >И мне важно, чтобы съёмка стала ярким воспоминанием для моего
+                  героя.<br
+                /></span>
+                <span class="text-en hidden"
+                  >It is important to me that the shoot becomes a vivid memory
+                  for my hero.<br
+                /></span>
+                <span class="text-ru"
+                  >Для этого я и команда, которую я собираю, окружаем героя
+                  заботой с самого начала подготовки.</span
+                >
+                <span class="text-en hidden"
+                  >That is why me and the team I assemble surround the person
+                  with care from the very beginning of preparation.</span
+                >
+              </h2>
+              <button class="bio__btn-en">en</button>
+            </div>
+          </div>
+          <div class="bio__wrapper-tool bio__wrapper-prof">
+            <div class="bio__wrapper-main__text">
+              <h2 class="bio__wrapper-main__text__1-block prof-text">
+                <span class="text-ru"
+                  >Я уважаю труд и творчество, и люблю, когда эти ребята идут
+                  рука об руку.</span
+                >
+                <span class="text-en hidden"
+                  >I respect activity and creativity, and I love it when these
+                  guys go hand in hand.</span
+                >
+              </h2>
+              <h2 class="bio__wrapper-main__text__1-block prof-text">
+                <span class="text-ru"
+                  >Поэтому отслеживаю все этапы съёмочного процесса и работаю с
+                  профессионалами своего дела, давая и им свободу в
+                  проявлении.</span
+                >
+                <span class="text-en hidden"
+                  >That's why I track all stages of the shooting process and
+                  work with professionals in their field, giving them the
+                  freedom to express themselves.</span
+                >
+              </h2>
+              <button class="bio__btn-en bio__btn-en_start">en</button>
+            </div>
+            <div class="bio__wrapper-tool__wrapper-img">
+              <img
+                src="./assets/img/about/panasyuk_5.webp"
+                class="prof-img"
+                alt="5 photo of Elena Panasyuk"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" aria-label="heart to link contacts">
+      <div class="container_portraits">
+        <div class="footer__wrapper">
+          <a href="contacts.html" aria-label="link to contacts">
+            <svg class="footer__icon">
+              <use href="assets/sprites.svg#heart-icon"></use>
+            </svg>
+            <p class="footer__icon-text">ваша Панасюк</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
