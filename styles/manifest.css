@@ -24,11 +24,17 @@
 }
 
 .manifest__content .beauty__text-ru {
+  margin: initial;
+  max-width: initial;
   font-size: 26px;
-  margin-top: 115px;
+  font-size: 2vw;
+  align-self: center;
+  font-weight: 200;
+  /* margin-top: 115px; */
 }
 
 .manifest__content .beauty__text-en {
+  margin: initial;
   font-size: 27px;
 }
 
@@ -50,21 +56,20 @@
   opacity: 1;
 }
 
-.manifest__photo .beauty__text-ru {
+/* .manifest__photo .beauty__text-ru {
   padding-left: 5px;
-  font-size: 26px;
+  font-size: 2vw;
   color: var(--c-white);
-  margin-top: 147px;
-}
+  /* margin-top: 147px; */
 
 @media (max-width: 1440px) {
-  .manifest__photo .beauty__text-ru {
+  /* .manifest__photo .beauty__text-ru {
     font-size: 23px;
     margin-top: 147px;
-  }
+  } */
   .manifest__content .beauty__text-ru {
-    font-size: 23px;
-    margin-top: 119px;
+    font-size: 3vw;
+    /* margin-top: 119px; */
   }
 }
 
@@ -75,10 +80,10 @@
   .manifest__photo {
     height: 635px;
   }
-  .manifest__content .beauty__text-ru {
+  /* .manifest__content .beauty__text-ru {
     margin-top: -25px;
     font-size: 22px;
-  }
+  } */
 
   .manifest__photo .beauty__text-ru {
     margin-top: 2px;
@@ -95,15 +100,15 @@
     padding: 150px 0;
   }
 
-  .manifest__photo .beauty__text-ru {
+  /* .manifest__photo .beauty__text-ru {
     font-size: 19px;
     margin-top: 5px;
-  }
+  } */
 
-  .manifest__content .beauty__text-ru {
+  /* .manifest__content .beauty__text-ru {
     margin-top: -18px;
     font-size: 19px;
-  }
+  } */
 
   .manifest__content .beauty__text-en {
     font-size: 16px;
@@ -119,13 +124,12 @@
     height: 493px;
   }
 
-  .manifest__photo .beauty__text-ru {
-    font-size: 17px;
-    margin-top: 2px;
-  }
+  /* .manifest__photo .beauty__text-ru {
+    
+    /* margin-top: 2px; */
 
   .manifest__content .beauty__text-ru {
-    font-size: 17px;
+    font-size: 4vw;
   }
 
   .manifest__content .beauty__text-en {
@@ -142,16 +146,16 @@
     height: 493px;
   }
 
-  .manifest__photo .beauty__text-ru {
+  /* .manifest__photo .beauty__text-ru {
     font-size: 17px;
     margin-top: 115px;
     width: 125px;
     text-align: start;
-  }
-  .manifest__content .beauty__text-ru {
+  } */
+  /* .manifest__content .beauty__text-ru {
     font-size: 17px;
     margin-top: 74px;
-  }
+  } */
   .manifest__content .beauty__text-en {
     text-align: center;
     font-size: 14px;
@@ -171,16 +175,16 @@
     gap: 70px;
     justify-content: space-between;
   }
-  .manifest__photo .beauty__text-ru {
+  /* .manifest__photo .beauty__text-ru {
     display: none;
-  }
+  } */
   .manifest__content .beauty__text-ru {
     text-align: center;
-    font-size: 36px;
+    /* font-size: 36px; */
   }
-  .manifest__content .beauty__text-ru::after {
+  /* .manifest__content .beauty__text-ru::after {
     content: "и светлому, и темному.";
-  }
+  } */
 
   .manifest__content .beauty__text-en {
     font-size: 21px;

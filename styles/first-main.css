@@ -182,15 +182,24 @@
     font-size: 8px;
   }
   .first-main__all-work {
-    margin-top: 92%;
+    margin-top: 75%;
+    padding-left: 3vw;
+    padding-right: initial;
+  }
+  .first-main__all-work {
+    justify-content: start;
   }
   .first-main__all-work-link {
     font-size: 20px;
-    color: var(--c-black);
+    color: var(--c-white);
   }
   .first-main__all-work-link::after {
     top: 27px;
-    background-color: var(--c-black);
+    background-color: var(--c-white);
+  }
+  .first-main__all-work-svg72 {
+    width: 55px;
+    height: 55px;
   }
 }
 

@@ -10,9 +10,8 @@
   height: 1059px;
   background: url(../assets/img/main/portfolio.webp) center/cover no-repeat;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .portfolio__title {
   position: absolute;
@@ -24,13 +23,19 @@
   letter-spacing: 0.8px;
   padding: 20px 0 0 30px;
 }
+.portfolio__main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vw;
+}
 
 .portfolio__ellipse {
   width: 190px;
   height: 190px;
   border-radius: 50%;
-  background-color: var(--c-black);
-  color: var(--c-white);
+  background-color: var(--c-white);
+  color: var(--c-black);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +76,7 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  gap: 15vw;
 }
 
 /* .portfolio__ellipse-projects {
