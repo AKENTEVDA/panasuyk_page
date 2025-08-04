@@ -36,20 +36,19 @@
   text-transform: lowercase;
   text-align: end;
   font-size: 120px;
-  font-family: "Poppins", sans-serif;
   letter-spacing: 0;
   color: var(--c-white);
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
   margin-right: 70px;
 }
 .first-main__logo::after {
   position: absolute;
   content: "photography";
   right: 0;
-  top: 130px;
+  top: 118px;
   font-size: 24px;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .first-main__all-work {
@@ -119,7 +118,7 @@
     font-size: 100px;
   }
   .first-main__logo::after {
-    top: 110px;
+    top: 98px;
     font-size: 20px;
   }
 }
@@ -133,7 +132,7 @@
     margin-right: 25px;
   }
   .first-main__logo::after {
-    top: 80px;
+    top: 72px;
     font-size: 16px;
   }
   .first-main__all-work {
@@ -151,7 +150,7 @@
     font-size: 60px;
   }
   .first-main__logo::after {
-    top: 65px;
+    top: 60px;
     right: 5px;
     font-size: 12px;
   }
@@ -178,7 +177,7 @@
     font-size: 40px;
   }
   .first-main__logo::after {
-    top: 45px;
+    top: 41px;
     font-size: 8px;
   }
   .first-main__all-work {
