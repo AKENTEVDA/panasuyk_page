@@ -46,7 +46,7 @@
   position: absolute;
   content: "photography";
   right: 0;
-  top: 118px;
+  top: 123px;
   font-size: 24px;
   font-weight: 700;
 }
@@ -118,7 +118,7 @@
     font-size: 100px;
   }
   .first-main__logo::after {
-    top: 98px;
+    top: 104px;
     font-size: 20px;
   }
 }
@@ -132,8 +132,8 @@
     margin-right: 25px;
   }
   .first-main__logo::after {
-    top: 72px;
-    font-size: 16px;
+    top: 76px;
+    font-size: 15px;
   }
   .first-main__all-work {
     margin-top: 55%;
@@ -150,9 +150,9 @@
     font-size: 60px;
   }
   .first-main__logo::after {
-    top: 60px;
+    top: 64px;
     right: 5px;
-    font-size: 12px;
+    font-size: 11px;
   }
   .first-main__all-work {
     justify-content: end;
@@ -177,8 +177,8 @@
     font-size: 40px;
   }
   .first-main__logo::after {
-    top: 41px;
-    font-size: 8px;
+    top: 43px;
+    font-size: 7px;
   }
   .first-main__all-work {
     margin-top: 75%;
