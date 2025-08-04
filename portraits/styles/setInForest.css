@@ -41,6 +41,21 @@
   object-fit: cover;
 }
 
+.tsenevRiver__icon {
+  display: none;
+  top: 99vw;
+  right: 15%;
+  left: initial;
+  fill: var(--c-white);
+}
+
+.forestWomen__icon {
+  display: none;
+  top: 107vw;
+  left: 15%;
+  fill: var(--c-light-grey);
+}
+
 @media (max-width: 992px) {
   .setInForest__wrapper-river-img-2 {
     max-height: 35vw;
@@ -52,21 +67,29 @@
   .setInForest__wrapper-river {
     flex-wrap: wrap;
     padding: 0 15px 50px;
+    position: relative;
   }
   .setInForest__wrapper-river-img-1 {
     max-width: 85vw;
   }
   .setInForest__wrapper-river-img-2 {
     max-height: initial;
-    max-width: 65vw;
+    max-width: 85vw;
   }
   .setInForest__wrapper-forest {
     flex-wrap: wrap;
     gap: 75px;
     padding: 50px 15px;
+    position: relative;
   }
   .setInForest__wrapper-forest-img {
     max-width: 85vw;
     max-height: inherit;
+  }
+  .tsenevRiver__icon {
+    display: block;
+  }
+  .forestWomen__icon {
+    display: block;
   }
 }

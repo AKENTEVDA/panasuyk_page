@@ -715,3 +715,174 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(riverSection);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const moscowIcon = document.querySelector(".moscowMan__icon");
+  const moscowWrapper = document.querySelector(
+    ".moscowPeople__wrapper-moscowMan"
+  );
+
+  if (moscowIcon && moscowWrapper) {
+    moscowIcon.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const hiddenImgs = moscowWrapper.querySelectorAll(
+        ".moscowPeople__moscowMan-img_hidden"
+      );
+
+      hiddenImgs.forEach((img) => {
+        if (img.style.display === "block") {
+          img.style.opacity = "0";
+          setTimeout(() => {
+            img.style.display = "none";
+          }, 300);
+        } else {
+          img.style.display = "block";
+          setTimeout(() => {
+            img.style.opacity = "1";
+          }, 10);
+        }
+      });
+    });
+
+    document.addEventListener("click", function () {
+      const hiddenImgs = document.querySelectorAll(
+        ".moscowPeople__moscowMan-img_hidden"
+      );
+      hiddenImgs.forEach((img) => {
+        img.style.opacity = "0";
+        setTimeout(() => {
+          img.style.display = "none";
+        }, 300);
+      });
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const moscowIcon = document.querySelector(".tsenevRiver__icon");
+  const moscowWrapper = document.querySelector(".setInForest__wrapper-river");
+
+  if (moscowIcon && moscowWrapper) {
+    moscowIcon.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const hiddenImgs = moscowWrapper.querySelectorAll(
+        ".moscowPeople__moscowMan-img_hidden"
+      );
+
+      hiddenImgs.forEach((img) => {
+        if (img.style.display === "block") {
+          img.style.opacity = "0";
+          setTimeout(() => {
+            img.style.display = "none";
+          }, 300);
+        } else {
+          img.style.display = "block";
+          setTimeout(() => {
+            img.style.opacity = "1";
+          }, 10);
+        }
+      });
+    });
+
+    document.addEventListener("click", function () {
+      const hiddenImgs = document.querySelectorAll(
+        ".moscowPeople__moscowMan-img_hidden"
+      );
+      hiddenImgs.forEach((img) => {
+        img.style.opacity = "0";
+        setTimeout(() => {
+          img.style.display = "none";
+        }, 300);
+      });
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const moscowIcon = document.querySelector(".forestWomen__icon");
+  const moscowWrapper = document.querySelector(".setInForest__wrapper-forest");
+
+  if (moscowIcon && moscowWrapper) {
+    moscowIcon.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const hiddenImgs = moscowWrapper.querySelectorAll(
+        ".moscowPeople__moscowMan-img_hidden"
+      );
+
+      hiddenImgs.forEach((img) => {
+        if (img.style.display === "block") {
+          img.style.opacity = "0";
+          setTimeout(() => {
+            img.style.display = "none";
+          }, 300);
+        } else {
+          img.style.display = "block";
+          setTimeout(() => {
+            img.style.opacity = "1";
+          }, 10);
+        }
+      });
+    });
+
+    document.addEventListener("click", function () {
+      const hiddenImgs = document.querySelectorAll(
+        ".moscowPeople__moscowMan-img_hidden"
+      );
+      hiddenImgs.forEach((img) => {
+        img.style.opacity = "0";
+        setTimeout(() => {
+          img.style.display = "none";
+        }, 300);
+      });
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const girlTightsIcon = document.querySelector(".girl-tights__icon");
+  const girlTightsWrapper = document.querySelector(
+    ".studio__wrapper-girl-tights"
+  );
+  const plus = document.querySelector(".girl-tights__icon");
+  if (girlTightsIcon && girlTightsWrapper) {
+    girlTightsIcon.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const hiddenImg = girlTightsWrapper.querySelector(
+        ".studio__wrapper-girl-tights-img-left"
+      );
+
+      // Проверяем текущее состояние через getComputedStyle
+      const currentDisplay = window.getComputedStyle(hiddenImg).display;
+
+      if (currentDisplay === "block") {
+        hiddenImg.style.opacity = "0";
+        setTimeout(() => {
+          hiddenImg.style.display = "none";
+          plus.style.right = "initial";
+          plus.style.left = "15%";
+        }, 300);
+      } else {
+        hiddenImg.style.display = "block";
+        setTimeout(() => {
+          hiddenImg.style.opacity = "1";
+          plus.style.left = "initial";
+          plus.style.right = "15%";
+        }, 10);
+      }
+    });
+
+    document.addEventListener("click", function () {
+      const hiddenImgs = document.querySelectorAll(
+        ".studio__wrapper-girl-tights-img-left"
+      );
+      hiddenImgs.forEach((img) => {
+        if (window.getComputedStyle(img).display === "block") {
+          img.style.opacity = "0";
+          setTimeout(() => {
+            img.style.display = "none";
+          }, 300);
+        }
+      });
+    });
+  }
+});
