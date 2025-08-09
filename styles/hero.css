@@ -60,6 +60,7 @@
   height: auto;
   object-fit: cover;
   opacity: 0;
+  object-position: -30% 0%;
   transition: opacity 0.6s ease-out;
   will-change: opacity;
 }
